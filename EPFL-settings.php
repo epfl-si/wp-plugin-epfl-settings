@@ -2,7 +2,7 @@
 /*
  * Plugin Name: EPFL General settings
  * Description: General settings for allow users
- * Version:     0.8
+ * Version:     1.1
  * Author:      <a href="mailto:wwp-admin@epfl.ch">wwp-admin@epfl.ch</a>
  * Text Domain: EPFL-settings
  */
@@ -22,6 +22,7 @@ function EPFL_settings_register_settings() {
    register_setting( 'EPFL_settings_options_group', 'blogdescription' );
    register_setting( 'EPFL_settings_options_group', 'WPLANG' );
    register_setting( 'EPFL_settings_options_group', 'epfl_google_analytics_id' );
+   register_setting( 'EPFL_settings_options_group', 'epfl_hide_coronavirus_info_header' );
 }
 add_action( 'admin_init', 'EPFL_settings_register_settings' );
 
@@ -71,6 +72,13 @@ function EPFL_settings_options_page()
       <td>
         <input type="text" id="epfl_google_analytics_id" name="epfl_google_analytics_id" value="<?php echo get_option('epfl_google_analytics_id'); ?>" />
         <p class="description" id="tagline-description"><?php echo __ ("Set an additionnal Google Analytics for custom tracking (ex: UA-4833294-1)", 'EPFL-settings');?></p>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><label for="epfl_hide_coronavirus_info_header"><?php echo __ ("'Coronavirus info' links", 'EPFL-settings');?></label></th>
+      <td>
+        <input type="checkbox" id="epfl_hide_coronavirus_info_header" name="epfl_hide_coronavirus_info_header" value="1" <?= checked( 1, get_option( 'epfl_hide_coronavirus_info_header' ), false ) ?> />
+        <?php echo __ ("Hide the coronavirus info links (header and in the menu)", 'EPFL-settings');?>
       </td>
     </tr>
   </table>

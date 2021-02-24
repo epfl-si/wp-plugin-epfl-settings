@@ -59,6 +59,13 @@ msgstr "Google Analytics ID supplémentaire"
 msgid "Set an additionnal Google Analytics for custom tracking (ex: UA-4833294-1)"
 msgstr "Ajoute un identifiant supplémentaire pour le tracking Google Analytics (ex: UA-4833294-1)"
 
+
+msgid "'Coronavirus info' links"
+msgstr "Liens 'Coronavirus Info'"
+
+msgid "Hide the coronavirus info links (header and in the menu)"
+msgstr "Cacher les liens d'information sur le coronavirus"
+
 #~ msgid "Incorrect breadcrumb"
 #~ msgstr "Fil d'Ariane invalide"
 

@@ -2,7 +2,7 @@
 /*
  * Plugin Name: EPFL General settings
  * Description: General settings for allow users
- * Version:     1.1
+ * Version:     1.2
  * Author:      <a href="mailto:wwp-admin@epfl.ch">wwp-admin@epfl.ch</a>
  * Text Domain: EPFL-settings
  */
@@ -74,6 +74,9 @@ function EPFL_settings_options_page()
         <p class="description" id="tagline-description"><?php echo __ ("Set an additionnal Google Analytics for custom tracking (ex: UA-4833294-1)", 'EPFL-settings');?></p>
       </td>
     </tr>
+    <?php # this entry is reserved for admin
+    if (current_user_can('administrator')):
+    ?>
     <tr>
       <th scope="row"><label for="epfl_hide_coronavirus_info_header"><?php echo __ ("'Coronavirus info' links", 'EPFL-settings');?></label></th>
       <td>
@@ -81,6 +84,7 @@ function EPFL_settings_options_page()
         <?php echo __ ("Hide the coronavirus info links (header and in the menu)", 'EPFL-settings');?>
       </td>
     </tr>
+    <?php endif; ?>
   </table>
   <?php  submit_button(); ?>
   </form>

@@ -62,8 +62,8 @@ function EPFL_settings_options_page()
       <td><?php wp_dropdown_languages(array('name' => 'WPLANG', 'id' => 'site-language', 'selected' => $lang, 'languages' => $languages, 'show_available_translations' => false)); ?></td>
     </tr>
     <tr>
-      <th scope="row"><label for="plugin:epfl_accred:unit"><?php echo __ ("Accred Unit", 'EPFL-settings');?></label></th>
-      <td><label for="plugin:epfl_accred:unit"><?php echo get_option('plugin:epfl_accred:unit'); ?></label></th>
+      <th scope="row"><label for="plugin:epfl_accred:unit_id"><?php echo __ ("Accred Unit", 'EPFL-settings');?></label></th>
+      <td><label for="plugin:epfl_accred:unit_id"><?php echo get_option('plugin:epfl_accred:unit_id'); ?></label></th>
       <p class="description" id="tagline-description"><?php echo __ ("Accred unit allowed to manage this Wordpress site", 'EPFL-settings');?></p>
       </td>
     </tr>

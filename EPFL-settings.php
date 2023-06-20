@@ -2,7 +2,7 @@
 /*
  * Plugin Name: EPFL General settings
  * Description: General settings for allow users
- * Version:     1.3
+ * Version:     1.4
  * Author:      <a href="mailto:wwp-admin@epfl.ch">wwp-admin@epfl.ch</a>
  * Text Domain: EPFL-settings
  */

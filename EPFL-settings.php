@@ -63,7 +63,7 @@ function EPFL_settings_options_page()
     </tr>
     <tr>
       <th scope="row"><label for="plugin:epfl_accred:unit_id"><?php echo __ ("Accred Unit", 'EPFL-settings');?></label></th>
-      <td><a href="https://units.epfl.ch/#/unites/<?php echo get_option('plugin:epfl_accred:unit_id'); ?>" target="blank"><label for="plugin:epfl_accred:unit_id"><?php echo get_option('plugin:epfl_accred:unit_id'); ?></label></a></th>
+      <td><a href="https://units.epfl.ch/#/unites/<?php echo get_option('plugin:epfl_accred:unit_id'); ?>" target="_blank"><label for="plugin:epfl_accred:unit_id"><?php echo get_option('plugin:epfl_accred:unit_id'); ?></label></a></th>
       <p class="description" id="tagline-description"><?php echo __ ("Accred unit allowed to manage this Wordpress site", 'EPFL-settings');?></p>
       </td>
     </tr>

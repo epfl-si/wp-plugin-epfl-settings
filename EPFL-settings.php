@@ -71,7 +71,7 @@ function EPFL_settings_options_page()
       <th scope="row"><label for="epfl_google_analytics_id"><?php echo __ ("Additional Google Analytics ID", 'EPFL-settings');?></label></th>
       <td>
         <input type="text" id="epfl_google_analytics_id" name="epfl_google_analytics_id" value="<?php echo get_option('epfl_google_analytics_id'); ?>" />
-        <p class="description" id="tagline-description"><?php echo __ ("Set an additionnal Google Analytics for custom tracking (ex: UA-4833294-1)", 'EPFL-settings');?></p>
+        <p class="description" id="tagline-description"><?php echo __ ("Set an additional Google Analytics for custom tracking (ex: G-LHDRBX6TDZ)", 'EPFL-settings');?></p>
       </td>
     </tr>
     <?php # this entry is reserved for admin
